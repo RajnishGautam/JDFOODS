@@ -1,0 +1,172 @@
+/* Container for the entire booking section */
+.book-table {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    margin-left: 50px;
+}
+
+.book-table h1 {
+    font-family: cursive;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+}
+
+/* Wrapper for form and map with positioning context */
+.content-wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) minmax(400px, 2fr);
+    gap: 40px;
+    width: 100%;
+}
+
+/* Form section with independent positioning */
+.form-section {
+    position: relative;
+    min-width: 500px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    margin-top: -0px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-table form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.book-table input,
+.book-table select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #555;
+    background-color: white;
+}
+
+.book-table input::placeholder {
+    color: #666;
+}
+
+.book-table input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0.6;
+}
+
+.book-table select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23666666%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.4-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 12px;
+    padding-right: 40px;
+}
+
+.book-table button[type="submit"] {
+    background-color: #F4C430;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: auto;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.book-table button[type="submit"]:hover {
+    background-color: #E3B52A;
+}
+
+/* Map section with independent positioning */
+.map {
+      flex: 1;   
+        width: 700px;  
+        margin-bottom: 10px;  
+        height: 300px;   
+        margin-left: 100px;
+        margin-top: -55px;      } 
+
+
+.map h2 {
+    font-family: cursive;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+    margin: -20px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+/* Utility classes for custom positioning */
+.position-absolute {
+    position: absolute !important;
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+.position-fixed {
+    position: fixed !important;
+}
+
+.position-sticky {
+    position: sticky !important;
+    top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .content-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .map {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .book-table {
+        padding: 20px 15px;
+    }
+
+    .book-table h1 {
+        font-size: 2rem;
+    }
+
+    .content-wrapper {
+        gap: 30px;
+    }
+
+    .form-section {
+        padding: 15px;
+    }
+
+    .book-table button[type="submit"] {
+        width: 100%;
+    }
+
+    .map {
+        height: 300px;
+    }
+}
