@@ -74,9 +74,9 @@
     padding-left: 10px;
 }
 .cart-promocode-input button{
-    width: max(10vw 150px);
+    width: 80px;
     padding: 12px 5px;
-    background-color: black;
+    background-color: tomato;
     border: none;
     color: white;
     border-radius: 4px;

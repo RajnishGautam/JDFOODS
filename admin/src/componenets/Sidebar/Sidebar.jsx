@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import './Sidebar.css'
 import { assets } from '../../assets/assets'
 import { NavLink } from 'react-router-dom'
@@ -20,7 +20,11 @@ const Sidebar = () => {
         </NavLink>
         <NavLink to='/orders' className="sidebar-option">
             <img src={assets.order_icon} alt="" />
-            <p>Orders</p>
+            <p>Order Management</p>
+        </NavLink>
+        <NavLink to="/users" className="sidebar-option">
+            <img src={assets.profile_image} alt="" />
+            <p>User Management</p>
         </NavLink>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import "./ContactUs.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -76,7 +76,7 @@ function ContactUs() {
       </section>
       <section className="rightcontainer">
         <div className="rightContainerBox">
-          <h6>Contact Information</h6>
+          <h6>Review Us</h6>
           <form>
             <div className="rows">
               <div className="inputgroup">
@@ -106,7 +106,7 @@ function ContactUs() {
             </div>
             <div className="messagegroup">
               <textarea name="message" placeholder=" " id="message"></textarea>
-              <label htmlFor="message">Have any message / Queries ?</label>
+              <label htmlFor="message">Put your review !</label>
             </div>
             <div className="submit">
               <input type="submit" value="Submit" />

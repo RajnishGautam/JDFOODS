@@ -28,6 +28,9 @@ const Footer = () => {
               <Link to="/about">About Us</Link>
             </li>
             <li>
+              <Link to="/about">Terms & Conditions</Link>
+            </li>
+            <li>
               <Link to="/privacy-policy">Privacy Policy</Link>
             </li>
           </ul>

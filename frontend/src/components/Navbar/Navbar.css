@@ -95,9 +95,9 @@
 }
 /* Profile Image Styling */
 .navbar-profile img {
-    width: 40px;  /* Set the desired width for the profile image */
-    height: 40px; /* Ensure the profile image is square */
-    border-radius: 50%; /* To make it circular */
+    width: 40px;  
+    height: 40px; 
+    border-radius: 50%; 
     margin-bottom: -10px;
     margin-right: -10px;
 }
@@ -121,6 +121,8 @@
     display: none;
     right: 0;
     z-index: 1;
+    width: 150px;
+    height:120px;
 }
 
 .navbar-profile:hover .nav-profile-dropdown {
