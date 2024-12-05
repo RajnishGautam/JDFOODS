@@ -10,7 +10,8 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
-  const url="http://localhost:4000"
+  const url="https://jdfoods-1.onrender.com";
+
   return (
     <div>
       <ToastContainer/>
@@ -30,3 +31,7 @@ const App = () => {
 }
 
 export default App
+
+
+
+
