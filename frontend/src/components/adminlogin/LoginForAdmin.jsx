@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './LoginForAdmin.css'; // Optional: Add styling
+import './LoginForadmin.css'; 
 
 const LoginForAdmin = () => {
   const [username, setUsername] = useState('');
