@@ -6,7 +6,7 @@ const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
   const [food_list, setFoodList] = useState([]);
   const [token, setToken] = useState("");
-  const url = "http://:4000";
+  const url = "http://localhost:4000"; 
 
   const addToCart = async (itemId) => {
     // Ensure we are adding to an existing cart item, or initialize it with quantity 1
