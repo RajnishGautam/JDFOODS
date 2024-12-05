@@ -6,8 +6,8 @@ const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
   const [food_list, setFoodList] = useState([]);
   const [token, setToken] = useState("");
-  const url = "http://localhost:4000"; 
-  // const url = "https://jdfoods-1.onrender.com";
+  // const url = "http://localhost:4000"; 
+  const url = "https://jdfoods-1.onrender.com";
 
   const addToCart = async (itemId) => {
     // Ensure we are adding to an existing cart item, or initialize it with quantity 1

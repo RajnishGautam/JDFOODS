@@ -24,9 +24,9 @@ const Footer = () => {
             <li>
               <Link to="/" onClick={scrollToTop}>Home</Link>
             </li>
-            <li>
-              <Link to="/about">About Us</Link>
-            </li>
+            <Link to="/login-for-admin" onClick={scrollToTop}>
+                Administrative Service
+              </Link>
             <li>
               <Link to="/about">Terms & Conditions</Link>
             </li>
